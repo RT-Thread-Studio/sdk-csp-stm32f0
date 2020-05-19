@@ -12,7 +12,7 @@
 #ifndef __UART_CONFIG_H__
 #define __UART_CONFIG_H__
 
-#include <board_cfg.h>
+#include <board.h>
 
 #ifdef __cplusplus
 extern "C" {

@@ -10,8 +10,8 @@
  * 2020-04-20     chenyaxing   add system_clock_config frequency parameter
  */
 
-#include <stm32f0xx.h>
 #include <stdio.h>
+#include <stm32f0xx.h>
 
 void _error_handler(char *s, int num);
 
@@ -60,3 +60,7 @@ int clock_information(void)
     return 0;
 }
 
+void wait_ms(unsigned long ms_time)
+{
+    HAL_Delay(ms_time);
+}

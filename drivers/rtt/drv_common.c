@@ -103,3 +103,47 @@ void rt_hw_us_delay(rt_uint32_t us)
         delta = start > now ? start - now : reload + start - now;
     } while(delta < us_tick * us);
 }
+
+/**
+ * This function will initial STM32 board.
+ */
+void hw_board_init(char *clock_src, int32_t clock_src_freq, int32_t clock_target_freq)
+{
+    extern void rt_hw_systick_init(void);
+    extern void clk_init(char *clk_source, int source_freq, int target_freq);
+
+#ifdef SCB_EnableICache
+    /* Enable I-Cache---------------------------------------------------------*/
+    SCB_EnableICache();
+#endif
+
+#ifdef SCB_EnableDCache
+    /* Enable D-Cache---------------------------------------------------------*/
+    SCB_EnableDCache();
+#endif
+
+    /* HAL_Init() function is called at the beginning of the program */
+    HAL_Init();
+
+    /* enable interrupt */
+    __set_PRIMASK(0);
+    /* System clock initialization */
+    clk_init(clock_src, clock_src_freq, clock_target_freq);
+    /* disbale interrupt */
+    __set_PRIMASK(1);
+
+    rt_hw_systick_init();
+
+    /* Pin driver initialization is open by default */
+#ifdef RT_USING_PIN
+    extern int rt_hw_pin_init(void);
+    rt_hw_pin_init();
+#endif
+
+    /* USART driver initialization is open by default */
+#ifdef RT_USING_SERIAL
+    extern int rt_hw_usart_init(void);
+    rt_hw_usart_init();
+#endif
+
+}
