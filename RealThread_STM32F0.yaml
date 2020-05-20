@@ -12,7 +12,7 @@ series:
 
       - SRAM with HW parity checking
       - Timer with deadtime generation and emergency stop
-  series_name: RealThread_STM32F0xx
+  series_name: STM32F0
   peripheral: {}
   sub_series:
   - sub_series_name: STM32F030
