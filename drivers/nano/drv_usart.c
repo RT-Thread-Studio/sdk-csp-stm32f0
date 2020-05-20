@@ -300,7 +300,9 @@ static rt_err_t stm32_gpio_configure(struct stm32_uart_config *config)
        { .pin_index = GET_PIN(C, 10), .afs[0] = {.uart_num = UART_IS_TX|3, .af_num = 1}},
        { .pin_index = GET_PIN(C, 11), .afs[0] = {.uart_num = UART_IS_RX|4, .af_num = 0}},
        { .pin_index = GET_PIN(C, 12), .afs[0] = {.uart_num = UART_IS_TX|5, .af_num = 2}},
+#ifdef GPIOD
        { .pin_index = GET_PIN(D,  2), .afs[0] = {.uart_num = UART_IS_RX|5, .af_num = 2}},
+#endif
     };
 
    /* get tx/rx pin index */
