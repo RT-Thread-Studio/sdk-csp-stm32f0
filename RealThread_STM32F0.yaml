@@ -2,7 +2,7 @@
 vendor: RealThread
 dvendor: STMicroelectronics
 name: STM32F0
-version: 0.1.6
+version: 0.1.7
 yaml_version: 1
 type: Chip_Support_Packages
 family_name: STM32
@@ -41,6 +41,7 @@ series:
           files:
           - libraries\CMSIS\Device\ST\STM32F0xx\Source\Templates\gcc\startup_stm32f030x6.S
           - libraries\CMSIS\Lib\GCC
+          - libraries\CMSIS\Device\ST\STM32F0xx\Include\stm32f030x6.h
         armcc:
           entry_point: none
           link_script: none
@@ -72,6 +73,7 @@ series:
           files:
           - libraries\CMSIS\Device\ST\STM32F0xx\Source\Templates\gcc\startup_stm32f030x8.S
           - libraries\CMSIS\Lib\GCC
+          - libraries\CMSIS\Device\ST\STM32F0xx\Include\stm32f030x8.h
         armcc:
           entry_point: none
           link_script: none
@@ -103,6 +105,7 @@ series:
           files:
           - libraries\CMSIS\Device\ST\STM32F0xx\Source\Templates\gcc\startup_stm32f030xc.S
           - libraries\CMSIS\Lib\GCC
+          - libraries\CMSIS\Device\ST\STM32F0xx\Include\stm32f030xc.h
         armcc:
           entry_point: none
           link_script: none
@@ -134,6 +137,7 @@ series:
           files:
           - libraries\CMSIS\Device\ST\STM32F0xx\Source\Templates\gcc\startup_stm32f030x6.S
           - libraries\CMSIS\Lib\GCC
+          - libraries\CMSIS\Device\ST\STM32F0xx\Include\stm32f030x6.h
         armcc:
           entry_point: none
           link_script: none
@@ -165,6 +169,7 @@ series:
           files:
           - libraries\CMSIS\Device\ST\STM32F0xx\Source\Templates\gcc\startup_stm32f030x6.S
           - libraries\CMSIS\Lib\GCC
+          - libraries\CMSIS\Device\ST\STM32F0xx\Include\stm32f030x6.h
         armcc:
           entry_point: none
           link_script: none
@@ -196,6 +201,7 @@ series:
           files:
           - libraries\CMSIS\Device\ST\STM32F0xx\Source\Templates\gcc\startup_stm32f030x8.S
           - libraries\CMSIS\Lib\GCC
+          - libraries\CMSIS\Device\ST\STM32F0xx\Include\stm32f030x8.h
         armcc:
           entry_point: none
           link_script: none
@@ -227,6 +233,7 @@ series:
           files:
           - libraries\CMSIS\Device\ST\STM32F0xx\Source\Templates\gcc\startup_stm32f030xc.S
           - libraries\CMSIS\Lib\GCC
+          - libraries\CMSIS\Device\ST\STM32F0xx\Include\stm32f030xc.h
         armcc:
           entry_point: none
           link_script: none
@@ -604,7 +611,7 @@ series:
         - STM32F031x6
         files:
         - libraries\CMSIS\Device\ST\STM32F0xx\Source\Templates\gcc\startup_stm32f031x6.S
-        - libraries\CMSIS\Device\ST\STM32F0xx\Include\stm32f0xx.h
+        - libraries\CMSIS\Device\ST\STM32F0xx\Include\stm32f031x6.h
         - libraries\CMSIS\Lib\GCC
       armcc:
         entry_point: none
@@ -830,7 +837,7 @@ series:
         - STM32F038xx
         files:
         - libraries\CMSIS\Device\ST\STM32F0xx\Source\Templates\gcc\startup_stm32f038xx.S
-        - libraries\CMSIS\Device\ST\STM32F0xx\Include\stm32f0xx.h
+        - libraries\CMSIS\Device\ST\STM32F0xx\Include\stm32f038xx.h
         - libraries\CMSIS\Lib\GCC
       armcc:
         entry_point: none
@@ -1168,7 +1175,7 @@ series:
         - STM32F042x6
         files:
         - libraries\CMSIS\Device\ST\STM32F0xx\Source\Templates\gcc\startup_stm32f042x6.S
-        - libraries\CMSIS\Device\ST\STM32F0xx\Include\stm32f0xx.h
+        - libraries\CMSIS\Device\ST\STM32F0xx\Include\stm32f042x6.h
         - libraries\CMSIS\Lib\GCC
       armcc:
         entry_point: none
@@ -1338,7 +1345,7 @@ series:
         - STM32F048xx
         files:
         - libraries\CMSIS\Device\ST\STM32F0xx\Source\Templates\gcc\startup_stm32f048xx.S
-        - libraries\CMSIS\Device\ST\STM32F0xx\Include\stm32f0xx.h
+        - libraries\CMSIS\Device\ST\STM32F0xx\Include\stm32f048xx.h
         - libraries\CMSIS\Lib\GCC
       armcc:
         entry_point: none
@@ -1704,7 +1711,7 @@ series:
         - STM32F051x8
         files:
         - libraries\CMSIS\Device\ST\STM32F0xx\Source\Templates\gcc\startup_stm32f051x8.S
-        - libraries\CMSIS\Device\ST\STM32F0xx\Include\stm32f0xx.h
+        - libraries\CMSIS\Device\ST\STM32F0xx\Include\stm32f051x8.h
         - libraries\CMSIS\Lib\GCC
       armcc:
         entry_point: none
@@ -1874,7 +1881,7 @@ series:
         - STM32F058xx
         files:
         - libraries\CMSIS\Device\ST\STM32F0xx\Source\Templates\gcc\startup_stm32f058xx.S
-        - libraries\CMSIS\Device\ST\STM32F0xx\Include\stm32f0xx.h
+        - libraries\CMSIS\Device\ST\STM32F0xx\Include\stm32f058xx.h
         - libraries\CMSIS\Lib\GCC
       armcc:
         entry_point: none
@@ -1950,6 +1957,7 @@ series:
           files:
           - libraries\CMSIS\Device\ST\STM32F0xx\Source\Templates\gcc\startup_stm32f070x6.S
           - libraries\CMSIS\Lib\GCC
+          - libraries\CMSIS\Device\ST\STM32F0xx\Include\stm32f070x6.h
         armcc:
           entry_point: none
           link_script: none
@@ -1981,6 +1989,7 @@ series:
           files:
           - libraries\CMSIS\Device\ST\STM32F0xx\Source\Templates\gcc\startup_stm32f070xb.S
           - libraries\CMSIS\Lib\GCC
+          - libraries\CMSIS\Device\ST\STM32F0xx\Include\stm32f070xb.h
         armcc:
           entry_point: none
           link_script: none
@@ -2012,6 +2021,7 @@ series:
           files:
           - libraries\CMSIS\Device\ST\STM32F0xx\Source\Templates\gcc\startup_stm32f070x6.S
           - libraries\CMSIS\Lib\GCC
+          - libraries\CMSIS\Device\ST\STM32F0xx\Include\stm32f070x6.h
         armcc:
           entry_point: none
           link_script: none
@@ -2043,6 +2053,7 @@ series:
           files:
           - libraries\CMSIS\Device\ST\STM32F0xx\Source\Templates\gcc\startup_stm32f070xb.S
           - libraries\CMSIS\Lib\GCC
+          - libraries\CMSIS\Device\ST\STM32F0xx\Include\stm32f070xb.h
         armcc:
           entry_point: none
           link_script: none
@@ -2308,7 +2319,7 @@ series:
         - STM32F071xB
         files:
         - libraries\CMSIS\Device\ST\STM32F0xx\Source\Templates\gcc\startup_stm32f071xb.S
-        - libraries\CMSIS\Device\ST\STM32F0xx\Include\stm32f0xx.h
+        - libraries\CMSIS\Device\ST\STM32F0xx\Include\stm32f071xb.h
         - libraries\CMSIS\Lib\GCC
       armcc:
         entry_point: none
@@ -2562,7 +2573,7 @@ series:
         - STM32F072xB
         files:
         - libraries\CMSIS\Device\ST\STM32F0xx\Source\Templates\gcc\startup_stm32f072xb.S
-        - libraries\CMSIS\Device\ST\STM32F0xx\Include\stm32f0xx.h
+        - libraries\CMSIS\Device\ST\STM32F0xx\Include\stm32f072xb.h
         - libraries\CMSIS\Lib\GCC
       armcc:
         entry_point: none
@@ -2732,7 +2743,7 @@ series:
         - STM32F078xx
         files:
         - libraries\CMSIS\Device\ST\STM32F0xx\Source\Templates\gcc\startup_stm32f078xx.S
-        - libraries\CMSIS\Device\ST\STM32F0xx\Include\stm32f0xx.h
+        - libraries\CMSIS\Device\ST\STM32F0xx\Include\stm32f078xx.h
         - libraries\CMSIS\Lib\GCC
       armcc:
         entry_point: none
@@ -2986,7 +2997,7 @@ series:
         - STM32F091xC
         files:
         - libraries\CMSIS\Device\ST\STM32F0xx\Source\Templates\gcc\startup_stm32f091xc.S
-        - libraries\CMSIS\Device\ST\STM32F0xx\Include\stm32f0xx.h
+        - libraries\CMSIS\Device\ST\STM32F0xx\Include\stm32f091xc.h
         - libraries\CMSIS\Lib\GCC
       armcc:
         entry_point: none
@@ -3156,7 +3167,7 @@ series:
         - STM32F098xx
         files:
         - libraries\CMSIS\Device\ST\STM32F0xx\Source\Templates\gcc\startup_stm32f098xx.S
-        - libraries\CMSIS\Device\ST\STM32F0xx\Include\stm32f0xx.h
+        - libraries\CMSIS\Device\ST\STM32F0xx\Include\stm32f098xx.h
         - libraries\CMSIS\Lib\GCC
       armcc:
         entry_point: none
@@ -3215,7 +3226,8 @@ series:
     - libraries\STM32F0xx_HAL_Driver
     - libraries\CMSIS\Include
     - libraries\CMSIS\RTOS
-    - libraries\CMSIS\Device\ST\STM32F0xx\Include
+    - libraries\CMSIS\Device\ST\STM32F0xx\Include\stm32f0xx.h
+    - libraries\CMSIS\Device\ST\STM32F0xx\Include\system_stm32f0xx.h
     - libraries\CMSIS\Device\ST\STM32F0xx\Source\Templates\system_stm32f0xx.c
   cpu_info:
     core: Cortex-M0
